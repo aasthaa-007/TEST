@@ -12,7 +12,7 @@ void insertAtBeginning(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = value;
     newNode->next = head; 
-    
+    head = newNode;
 }
 
 void displayList() {
